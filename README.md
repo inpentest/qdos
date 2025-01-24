@@ -48,9 +48,9 @@ python qdos.py
 3: Cyclic Query Attack
 4: Batching Attack
 
-### Configure Threads and Delay: Specify the number of threads (default is 10) and the delay between requests (default is 0 seconds).
+- **Configure Threads and Delay**: Specify the number of threads (default is 10) and the delay between requests (default is 0 seconds).
 
-### Run the Attack: Once you enter all the details, the script will execute the selected attack, providing output for each request sent, including status codes and response snippets.
+-  **Run the Attack**: Once you enter all the details, the script will execute the selected attack, providing output for each request sent, including status codes and response snippets.
 
 ## Example Usage
 1. Enter the URL and headers:
@@ -76,12 +76,13 @@ Enter request delay (seconds, default 0.0): 1.0
 The program will now execute the selected attack, printing status messages and response snippets to the terminal.
 
 ## Code Structure
-`get_headers_input`: Handles intelligent header input, allowing users to provide either just a token or paste full headers.
-`GraphQLDoSTest`: The base class for all DoS tests, defining the common structure and methods.
-`DirectiveOverloadingTest`, `DeepIntrospectionTest`, `CyclicQueryAttackTest`, `BatchingAttackTest`: These are subclasses of GraphQLDoSTest, each implementing a specific DoS attack type.
-**Multithreading**: Uses Python's threading module to simulate concurrent requests for high-load scenarios.
-**User Input**: Prompts the user for necessary details such as URL, headers, attack type, number of threads, and request delay.
-Contributing
+- `get_headers_input`: Handles intelligent header input, allowing users to provide either just a token or paste full headers.
+- `GraphQLDoSTest`: The base class for all DoS tests, defining the common structure and methods.
+- `DirectiveOverloadingTest`, `DeepIntrospectionTest`, `CyclicQueryAttackTest`, `BatchingAttackTest`: These are subclasses of GraphQLDoSTest, each implementing a specific DoS attack type.
+- **Multithreading**: Uses Python's threading module to simulate concurrent requests for high-load scenarios.
+- **User Input**: Prompts the user for necessary details such as URL, headers, attack type, number of threads, and request delay.
+
+## Contributing
 If you would like to contribute to the development of this tool, please feel free to fork the repository, create a pull request, or submit issues for bug reports or feature requests.
 
 ## License
